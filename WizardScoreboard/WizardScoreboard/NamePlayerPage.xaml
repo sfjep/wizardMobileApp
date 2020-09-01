@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WizardScoreboard.NamePlayerPage">
+
+    <StackLayout Margin="10,20,10,0"
+                 x:Name="numberOfPlayers">
+
+        <Label Text="Name the players:" 
+               HorizontalTextAlignment="Center" 
+               TextColor="DarkBlue" 
+               FontSize="25"/>
+
+        <Entry x:Name="Player1" 
+               Placeholder="Name Player 1"
+               ClearButtonVisibility="WhileEditing"/>
+        <Entry x:Name="Player2" 
+               Placeholder="Name Player 2"
+               ClearButtonVisibility="WhileEditing"/>
+        <Entry x:Name="Player3" 
+               Placeholder="Name Player 3"
+               ClearButtonVisibility="WhileEditing"/>
+        <Entry x:Name="Player4" 
+               Placeholder="Name Player 4"
+               ClearButtonVisibility="WhileEditing"/>
+        <Entry x:Name="Player5" 
+               Placeholder="Name Player 5"
+               ClearButtonVisibility="WhileEditing"/>
+        <Entry x:Name="Player6" 
+               Placeholder="Name Player 6"
+               ClearButtonVisibility="WhileEditing"/>
+        
+        <Button Text="Continue"
+                Clicked="Button_Clicked"/>
+
+        <Label Text="Name at least 3 players!"
+               TextColor="DarkBlue"
+               FontSize="18"/>
+    </StackLayout>
+
+</ContentPage>

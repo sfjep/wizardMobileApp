@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage  xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+            x:Class="WizardScoreboard.GamePage">
+
+    <ContentPage Title="Game Page" 
+                 Icon ="wizardIcon.png">
+        
+        <ContentPage.Content>
+            <ScrollView x:Name="scrollGame">
+                <StackLayout x:Name="RoundNrAndDealer_GuessAndResults"
+                             Padding="10,10,20,0">
+
+                    <Label x:Name="RoundNr"
+                           HorizontalTextAlignment="Left" 
+                           TextColor="DarkBlue" 
+                           FontSize="18"/>
+                    <Label x:Name="RoundDealer"
+                           HorizontalTextAlignment="Left" 
+                           TextColor="DarkBlue" 
+                           FontSize="18"/>
+
+                </StackLayout>
+            </ScrollView>
+        </ContentPage.Content>
+        
+    </ContentPage>
+
+    <ContentPage Title="Scoreboard" 
+                 Icon ="score.png">
+        <ContentPage.Content>
+            <ScrollView x:Name="scrollScore">
+                <StackLayout x:Name="scoreboard"
+                         Padding="10,10,20,0">
+
+                </StackLayout>
+            </ScrollView>
+        </ContentPage.Content>
+    </ContentPage>
+    
+</TabbedPage>
