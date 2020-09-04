@@ -2,6 +2,7 @@
 using System.Net.Http.Headers;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Google.Cloud.Firestore;
 
 namespace WizardScoreboard
 {
@@ -10,8 +11,7 @@ namespace WizardScoreboard
         public App()
         {
             InitializeComponent();
-
-            MainPage = new NavigationPage(new MainPage());
+            Current.MainPage = new MainPage();
         }
 
         protected override void OnStart()

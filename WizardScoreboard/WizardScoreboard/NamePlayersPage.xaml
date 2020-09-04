@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="WizardScoreboard.NamePlayerPage">
+             x:Class="WizardScoreboard.NamePlayersPage">
 
     <StackLayout Margin="10,20,10,0"
                  x:Name="numberOfPlayers">
@@ -36,6 +36,7 @@
         <Label Text="Name at least 3 players!"
                TextColor="DarkBlue"
                FontSize="18"/>
+
     </StackLayout>
 
 </ContentPage>

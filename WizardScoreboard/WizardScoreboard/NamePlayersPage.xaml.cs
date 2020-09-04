@@ -13,11 +13,11 @@ namespace WizardScoreboard
     [XamlCompilation(XamlCompilationOptions.Compile)]
 
     
-    public partial class NamePlayerPage : ContentPage
+    public partial class NamePlayersPage : ContentPage
     {
         public List<Player> players = new List<Player>();
 
-        public NamePlayerPage()
+        public NamePlayersPage()
         {
             InitializeComponent();
         }
@@ -26,7 +26,7 @@ namespace WizardScoreboard
         {
             players = getPlayerNames();
 
-            Navigation.PushAsync(new GamePage(players));
+            Application.Current.MainPage = new GamePage(players);
         }
 
         private List<Player> getPlayerNames()
@@ -72,9 +72,4 @@ namespace WizardScoreboard
             return players;
         }
     }
-
-
-
-
-
 }

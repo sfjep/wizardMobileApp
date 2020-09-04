@@ -351,7 +351,7 @@ namespace WizardScoreboard
         private void AddNextRoundButton()
         {
             nextButton.Clicked += new EventHandler(nextButton_Click);
-            RoundNrAndDealer_GuessAndResults.Children.Add(nextButton);
+            scoreboard.Children.Add(nextButton);
 
         }
 
@@ -361,7 +361,7 @@ namespace WizardScoreboard
             resultButton.Clicked -= new EventHandler(resultButton_Click);
             guessButton.Clicked -= new EventHandler(guessButton_Click);
 
-            RoundNrAndDealer_GuessAndResults.Children.Remove(nextButton);
+            scoreboard.Children.Remove(nextButton);
 
             RemoveTextFromEntryField();
             RemoveResultEntryFields();
@@ -369,6 +369,8 @@ namespace WizardScoreboard
             RoundNrAndDealer_GuessAndResults.Children.Remove(resultButton);
 
             entryByNameResult.Clear();
+
+            CurrentPage = Children[0];
 
             i++;
 

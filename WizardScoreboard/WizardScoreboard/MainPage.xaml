@@ -5,32 +5,15 @@
 
     <StackLayout VerticalOptions ="Center" 
                  Margin="20">
-        
+
         <Label Text="Wizard!" 
                HorizontalTextAlignment="Center" 
                TextColor="Black" 
                FontSize="46"
                Margin="0, 20"/>
 
-        <Label Text="Login" 
-               TextColor="Black" 
-               FontSize="28" 
-               HorizontalTextAlignment="Center"/>
-
-        <Entry x:Name="EmailInput" 
-               Placeholder="E-mail" 
-               Keyboard="Email"/>
-
-        <Entry x:Name="PasswordInput" 
-               Placeholder="Password" 
-               IsPassword="True"/>
-
-        <Button x:Name="signin" 
-                Text="Sign In" 
-                Clicked="LoginClicked" 
-                HorizontalOptions="Center"/>
-
-
+        <Button Text="START GAME!"
+                Clicked="StartGame"/>
     </StackLayout>
 
 </ContentPage>
